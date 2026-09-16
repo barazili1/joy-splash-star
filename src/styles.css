@@ -841,7 +841,7 @@
 
   .bottom-nav {
     height: 3.9375rem;
-    padding: 0.96rem 0.55rem max(0.28rem, env(safe-area-inset-bottom));
+    padding: 1.1025rem 0.55rem max(0.28rem, env(safe-area-inset-bottom));
     border-radius: 1.35rem 1.35rem 0 0;
   }
 
