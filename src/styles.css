@@ -1468,7 +1468,7 @@
 
 .ts-input-row {
   display: grid;
-  grid-template-columns: 1fr 52px;
+  grid-template-columns: 1fr 42px;
   gap: 10px;
   padding-top: 4px;
 }
