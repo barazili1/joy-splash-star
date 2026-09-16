@@ -123,7 +123,15 @@ function TransferPage() {
           aria-label="الرئيسية"
           onClick={() => navigate({ to: "/home" })}
         >
-          <img src={navHome} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{
+              maskImage: `url(${navHome})`,
+              WebkitMaskImage: `url(${navHome})`,
+              background: "#a9a9a9",
+            }}
+          />
         </button>
         <button type="button" className="nav-item active" aria-label="ارسال">
           <span
