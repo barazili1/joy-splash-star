@@ -235,7 +235,11 @@ function HomePage() {
 
       <nav className="bottom-nav" aria-label="التنقل">
         <button type="button" className="nav-item active">
-          <img src={navHome} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navHome})`, WebkitMaskImage: `url(${navHome})` }}
+          />
           <span>الرئيسية</span>
         </button>
         <button
@@ -244,16 +248,32 @@ function HomePage() {
           aria-label="ارسال نقود"
           onClick={() => navigate({ to: "/transfersimulator" })}
         >
-          <img src={navSend} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navSend})`, WebkitMaskImage: `url(${navSend})` }}
+          />
         </button>
         <button type="button" className="nav-item" aria-label="طلب دفع">
-          <img src={navRequest} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navRequest})`, WebkitMaskImage: `url(${navRequest})` }}
+          />
         </button>
         <button type="button" className="nav-item" aria-label="الفواتير">
-          <img src={navBills} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navBills})`, WebkitMaskImage: `url(${navBills})` }}
+          />
         </button>
         <button type="button" className="nav-item" aria-label="القائمة">
-          <img src={navMenu} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navMenu})`, WebkitMaskImage: `url(${navMenu})` }}
+          />
         </button>
       </nav>
 
