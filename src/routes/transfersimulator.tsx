@@ -1,11 +1,6 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ChevronDown, PlusCircle } from "lucide-react";
 import bankLogo from "@/assets/nbe-logo.png.asset.json";
-import navHome from "@/assets/nav-home.png";
-import navSend from "@/assets/nav-send.png";
-import navRequest from "@/assets/nav-request.png";
-import navBills from "@/assets/nav-bills.png";
-import navMenu from "@/assets/nav-menu.png";
 import iconPhone from "@/assets/phone.png";
 import iconAt from "@/assets/at.png";
 import iconBank from "@/assets/bank.png";
@@ -29,7 +24,6 @@ export const Route = createFileRoute("/transfersimulator")({
 });
 
 function TransferPage() {
-  const navigate = useNavigate();
   return (
     <div className="ts" dir="rtl" lang="ar">
       <header className="ts-hero" />
@@ -116,49 +110,6 @@ function TransferPage() {
 
       <button type="button" className="ts-next">التالي</button>
 
-      <nav className="bottom-nav" aria-label="التنقل">
-        <button
-          type="button"
-          className="nav-item"
-          aria-label="الرئيسية"
-          onClick={() => navigate({ to: "/home" })}
-        >
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navHome})`, WebkitMaskImage: `url(${navHome})` }}
-          />
-        </button>
-        <button type="button" className="nav-item active" aria-label="ارسال">
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navSend})`, WebkitMaskImage: `url(${navSend})` }}
-          />
-          <span>ارسال</span>
-        </button>
-        <button type="button" className="nav-item" aria-label="طلب دفع">
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navRequest})`, WebkitMaskImage: `url(${navRequest})` }}
-          />
-        </button>
-        <button type="button" className="nav-item" aria-label="الفواتير">
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navBills})`, WebkitMaskImage: `url(${navBills})` }}
-          />
-        </button>
-        <button type="button" className="nav-item" aria-label="القائمة">
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navMenu})`, WebkitMaskImage: `url(${navMenu})` }}
-          />
-        </button>
-      </nav>
     </div>
   );
 }
