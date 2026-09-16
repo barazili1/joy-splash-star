@@ -1565,7 +1565,8 @@
 }
 
 .ts-reason {
-  margin: 6px 16px 0;
+  margin: 2px 16px 0;
+  width: fit-content;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1576,8 +1577,7 @@
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
-  padding: 4px 0;
-  float: left;
+  padding: 2px 0;
 }
 .ts-reason svg { width: 18px; height: 18px; }
 
