@@ -13,7 +13,7 @@ import qrCode from "@/assets/qr-code.png";
 import btnQr from "@/assets/btn-qr.png";
 import btnShare from "@/assets/btn-share.png";
 import homeHeader from "@/assets/home-header.jpeg";
-import bankLogo from "@/assets/bank-reference.png";
+import bankLogo from "@/assets/nbe-logo.png.asset.json";
 import ipnLogo from "@/assets/ipn-logo.png";
 import navHome from "@/assets/nav-home.png";
 import navSend from "@/assets/nav-send.png";
@@ -136,7 +136,7 @@ function HomePage() {
       <section className="home-section">
         <div className="account-card">
           <div className="account-top">
-            <img src={bankLogo} alt="البنك" loading="lazy" width={130} height={130} />
+            <img src={bankLogo.url} alt="البنك الأهلي المصري" loading="lazy" width={130} height={130} />
             <div className="account-id">
               <p>mohamed.othman4279@instapay</p>
               <small>
