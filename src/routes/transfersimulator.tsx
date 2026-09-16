@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { ChevronDown, PlusCircle } from "lucide-react";
-import bankLogo from "@/assets/bank-reference.png";
+import bankLogo from "@/assets/nbe-logo.png.asset.json";
 import navHome from "@/assets/nav-home.png";
 import navSend from "@/assets/nav-send.png";
 import navRequest from "@/assets/nav-request.png";
@@ -35,7 +35,7 @@ function TransferPage() {
       <header className="ts-hero" />
 
       <section className="ts-from">
-        <img className="ts-from-logo" src={bankLogo} alt="" />
+        <img className="ts-from-logo" src={bankLogo.url} alt="البنك الأهلي المصري" />
         <div className="ts-from-info">
           <small>من</small>
           <input
