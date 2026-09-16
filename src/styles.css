@@ -1571,3 +1571,42 @@
   box-shadow: 0 10px 24px -12px oklch(0.4 0.22 300 / 0.6);
 }
 
+
+/* ===== Smooth page transitions ===== */
+@keyframes page-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.home,
+.ts {
+  animation: page-fade-in 0.28s ease-out;
+}
+@keyframes content-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.home > *:not(.bottom-nav):not(.loading-overlay):not(.qr-overlay),
+.ts > *:not(.bottom-nav) {
+  animation: content-rise 0.32s ease-out backwards;
+}
+.home > *:nth-child(2),
+.ts > *:nth-child(2) {
+  animation-delay: 0.03s;
+}
+.home > *:nth-child(3),
+.ts > *:nth-child(3) {
+  animation-delay: 0.06s;
+}
+.home > *:nth-child(4),
+.ts > *:nth-child(4) {
+  animation-delay: 0.09s;
+}
+.home > *:nth-child(5),
+.ts > *:nth-child(5) {
+  animation-delay: 0.12s;
+}
+.bottom-nav .nav-item,
+.bottom-nav .nav-item img,
+.bottom-nav .nav-icon-tint {
+  transition: opacity 0.2s ease;
+}
