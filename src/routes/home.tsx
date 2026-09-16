@@ -15,11 +15,6 @@ import btnShare from "@/assets/btn-share.png";
 import homeHeader from "@/assets/home-header.jpeg";
 import bankLogo from "@/assets/nbe-logo.png.asset.json";
 import ipnLogo from "@/assets/ipn-logo.png";
-import navHome from "@/assets/nav-home.png";
-import navSend from "@/assets/nav-send.png";
-import navRequest from "@/assets/nav-request.png";
-import navBills from "@/assets/nav-bills.png";
-import navMenu from "@/assets/nav-menu.png";
 import actionBalance from "@/assets/action-balance.png";
 import actionLink from "@/assets/action-link.png";
 import actionQr from "@/assets/action-qr.png";
@@ -232,50 +227,6 @@ function HomePage() {
           />
         </div>
       </section>
-
-      <nav className="bottom-nav" aria-label="التنقل">
-        <button type="button" className="nav-item active">
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navHome})`, WebkitMaskImage: `url(${navHome})` }}
-          />
-          <span>الرئيسية</span>
-        </button>
-        <button
-          type="button"
-          className="nav-item"
-          aria-label="ارسال نقود"
-          onClick={() => navigate({ to: "/transfersimulator" })}
-        >
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navSend})`, WebkitMaskImage: `url(${navSend})` }}
-          />
-        </button>
-        <button type="button" className="nav-item" aria-label="طلب دفع">
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navRequest})`, WebkitMaskImage: `url(${navRequest})` }}
-          />
-        </button>
-        <button type="button" className="nav-item" aria-label="الفواتير">
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navBills})`, WebkitMaskImage: `url(${navBills})` }}
-          />
-        </button>
-        <button type="button" className="nav-item" aria-label="القائمة">
-          <span
-            className="nav-icon-tint"
-            aria-hidden="true"
-            style={{ maskImage: `url(${navMenu})`, WebkitMaskImage: `url(${navMenu})` }}
-          />
-        </button>
-      </nav>
 
       {(loading || balanceLoading) && (
         <div className="loading-overlay" role="status" aria-label="جارٍ التحميل">

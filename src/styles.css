@@ -686,6 +686,14 @@
   border-radius: 1.4rem 1.4rem 0 0;
   background: oklch(1 0 0);
   box-shadow: 0 -8px 24px -20px oklch(0.3 0.05 280 / 0.8);
+  z-index: 50;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.bottom-nav.is-visible {
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav-item {
@@ -700,6 +708,7 @@
   color: var(--home-muted);
   font: inherit;
   font-size: 0.85rem;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -715,11 +724,22 @@
   font-weight: 600;
 }
 
+.nav-label {
+  height: 1.1em;
+  opacity: 0;
+  color: inherit;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-item.active .nav-label {
+  opacity: 1;
+}
+
 .nav-item .nav-icon-tint {
   display: block;
   width: 1.8875rem;
   height: 1.8875rem;
-  background: #a9a9a9;
+  background: var(--home-muted);
   transition: background-color 0.25s ease;
   -webkit-mask-size: contain;
   mask-size: contain;
