@@ -126,11 +126,7 @@ function TransferPage() {
           <span
             className="nav-icon-tint"
             aria-hidden="true"
-            style={{
-              maskImage: `url(${navHome})`,
-              WebkitMaskImage: `url(${navHome})`,
-              background: "#a9a9a9",
-            }}
+            style={{ maskImage: `url(${navHome})`, WebkitMaskImage: `url(${navHome})` }}
           />
         </button>
         <button type="button" className="nav-item active" aria-label="ارسال">
@@ -142,13 +138,25 @@ function TransferPage() {
           <span>ارسال</span>
         </button>
         <button type="button" className="nav-item" aria-label="طلب دفع">
-          <img src={navRequest} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navRequest})`, WebkitMaskImage: `url(${navRequest})` }}
+          />
         </button>
         <button type="button" className="nav-item" aria-label="الفواتير">
-          <img src={navBills} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navBills})`, WebkitMaskImage: `url(${navBills})` }}
+          />
         </button>
         <button type="button" className="nav-item" aria-label="القائمة">
-          <img src={navMenu} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navMenu})`, WebkitMaskImage: `url(${navMenu})` }}
+          />
         </button>
       </nav>
     </div>
