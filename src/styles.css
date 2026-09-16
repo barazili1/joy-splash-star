@@ -705,8 +705,8 @@
 
 .nav-item svg,
 .nav-item img {
-  width: 2.0125rem;
-  height: 2.0125rem;
+  width: 1.8875rem;
+  height: 1.8875rem;
   object-fit: contain;
 }
 
@@ -716,9 +716,9 @@
 }
 
 .nav-item .nav-icon-tint {
-  display: block;
-  width: 2.0125rem;
-  height: 2.0125rem;
+  ...
+  width: 1.8875rem;
+  height: 1.8875rem;
   background: currentColor;
   -webkit-mask-size: contain;
   mask-size: contain;
@@ -853,8 +853,8 @@
   .nav-item svg,
   .nav-item img,
   .nav-item .nav-icon-tint {
-    width: 1.7325rem;
-    height: 1.7325rem;
+    width: 1.6075rem;
+    height: 1.6075rem;
   }
 
   /* Transactions section — more compact */
