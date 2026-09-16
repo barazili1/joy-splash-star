@@ -712,6 +712,19 @@
   font-weight: 600;
 }
 
+.nav-item .nav-icon-tint {
+  display: block;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: currentColor;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
 /* Reference-accurate mobile proportions */
 @media (max-width: 520px) {
   .home {
@@ -835,7 +848,8 @@
   }
 
   .nav-item svg,
-  .nav-item img {
+  .nav-item img,
+  .nav-item .nav-icon-tint {
     width: 1.42rem;
     height: 1.42rem;
   }

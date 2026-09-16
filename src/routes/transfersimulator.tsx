@@ -124,23 +124,23 @@ function TransferPage() {
           onClick={() => navigate({ to: "/home" })}
         >
           <img src={navHome} alt="" />
-          <span>الرئيسية</span>
         </button>
-        <button type="button" className="nav-item active" aria-label="ارسال نقود">
-          <img src={navSend} alt="" />
-          <span>ارسال نقود</span>
+        <button type="button" className="nav-item active" aria-label="ارسال">
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navSend})`, WebkitMaskImage: `url(${navSend})` }}
+          />
+          <span>ارسال</span>
         </button>
         <button type="button" className="nav-item" aria-label="طلب دفع">
           <img src={navRequest} alt="" />
-          <span>طلب دفع</span>
         </button>
         <button type="button" className="nav-item" aria-label="الفواتير">
           <img src={navBills} alt="" />
-          <span>الفواتير</span>
         </button>
         <button type="button" className="nav-item" aria-label="القائمة">
           <img src={navMenu} alt="" />
-          <span>القائمة</span>
         </button>
       </nav>
     </div>
