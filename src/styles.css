@@ -1552,7 +1552,7 @@
   display: flex;
   gap: 6px;
   justify-content: center;
-  padding: 14px 0 6px;
+  padding: 10px 0 2px;
 }
 .ts-dots span {
   width: 6px;
