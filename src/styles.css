@@ -705,8 +705,8 @@
 
 .nav-item svg,
 .nav-item img {
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 2.0125rem;
+  height: 2.0125rem;
   object-fit: contain;
 }
 
@@ -717,8 +717,8 @@
 
 .nav-item .nav-icon-tint {
   display: block;
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 2.0125rem;
+  height: 2.0125rem;
   background: currentColor;
   -webkit-mask-size: contain;
   mask-size: contain;
@@ -840,8 +840,8 @@
   }
 
   .bottom-nav {
-    height: 4.25rem;
-    padding: 0.35rem 0.55rem max(0.28rem, env(safe-area-inset-bottom));
+    height: 3.9375rem;
+    padding: 0.96rem 0.55rem max(0.28rem, env(safe-area-inset-bottom));
     border-radius: 1.35rem 1.35rem 0 0;
   }
 
@@ -853,8 +853,8 @@
   .nav-item svg,
   .nav-item img,
   .nav-item .nav-icon-tint {
-    width: 1.42rem;
-    height: 1.42rem;
+    width: 1.7325rem;
+    height: 1.7325rem;
   }
 
   /* Transactions section — more compact */
