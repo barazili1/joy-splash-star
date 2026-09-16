@@ -22,6 +22,8 @@ export function AppBottomNav() {
       className={`bottom-nav${visible ? " is-visible" : ""}`}
       aria-label="التنقل"
       aria-hidden={!visible}
+      dir="rtl"
+      lang="ar"
     >
       {items.map((item) => {
         const active = item.to === pathname;
