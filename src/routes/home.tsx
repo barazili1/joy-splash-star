@@ -238,7 +238,12 @@ function HomePage() {
           <img src={navHome} alt="" />
           <span>الرئيسية</span>
         </button>
-        <button type="button" className="nav-item" aria-label="ارسال نقود">
+        <button
+          type="button"
+          className="nav-item"
+          aria-label="ارسال نقود"
+          onClick={() => navigate({ to: "/transfersimulator" })}
+        >
           <img src={navSend} alt="" />
         </button>
         <button type="button" className="nav-item" aria-label="طلب دفع">
