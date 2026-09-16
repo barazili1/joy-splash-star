@@ -716,7 +716,7 @@
 }
 
 .nav-item .nav-icon-tint {
-  ...
+  display: block;
   width: 1.8875rem;
   height: 1.8875rem;
   background: currentColor;
