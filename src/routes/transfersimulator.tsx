@@ -126,7 +126,11 @@ function TransferPage() {
           <img src={navHome} alt="" />
         </button>
         <button type="button" className="nav-item active" aria-label="ارسال">
-          <img src={navSend} alt="" />
+          <span
+            className="nav-icon-tint"
+            aria-hidden="true"
+            style={{ maskImage: `url(${navSend})`, WebkitMaskImage: `url(${navSend})` }}
+          />
           <span>ارسال</span>
         </button>
         <button type="button" className="nav-item" aria-label="طلب دفع">
