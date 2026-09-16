@@ -1203,7 +1203,8 @@
 
 .pin-boxes {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 60px);
+  justify-content: center;
   gap: 11px;
   margin-top: 12px;
 }
@@ -1212,6 +1213,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 60px;
   height: 42px;
   border: 1px solid oklch(0.85 0 0);
   border-radius: 8px;
@@ -1445,7 +1447,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 2px 8px;
+  padding: 10px 2px 8px;
 }
 .ts-field-head h3 {
   margin: 0;
@@ -1550,7 +1552,7 @@
   display: flex;
   gap: 6px;
   justify-content: center;
-  padding: 14px 0 6px;
+  padding: 10px 0 2px;
 }
 .ts-dots span {
   width: 6px;
@@ -1563,7 +1565,8 @@
 }
 
 .ts-reason {
-  margin: 6px 16px 0;
+  margin: 2px 16px 0;
+  width: fit-content;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1574,8 +1577,7 @@
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
-  padding: 4px 0;
-  float: left;
+  padding: 2px 0;
 }
 .ts-reason svg { width: 18px; height: 18px; }
 
