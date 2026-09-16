@@ -1273,7 +1273,7 @@
 .ts-hero {
   position: relative;
   height: 180px;
-  background-image: url("/__l5e/assets-v1/67396faf-c0b6-45db-a0f0-a5aae6e84c19/ts-hero-bg.jpeg");
+  background-image: url("./assets/ts-hero-bg.jpeg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
