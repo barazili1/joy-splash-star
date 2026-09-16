@@ -1508,7 +1508,7 @@
   color: oklch(0.2 0 0);
   cursor: pointer;
 }
-.ts-contact svg { width: 20px; height: 20px; }
+.ts-contact svg { width: 14px; height: 14px; }
 
 .ts-amount {
   margin-top: 10px;
