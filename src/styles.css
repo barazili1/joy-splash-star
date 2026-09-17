@@ -1533,9 +1533,8 @@
   color: oklch(0.55 0 0);
   font-size: 13px;
   font-weight: 600;
-  text-align: right;
+  text-align: center;
   direction: ltr;
-  transform: translateX(4px);
 }
 .ts-amount-sep {
   width: 1px;
