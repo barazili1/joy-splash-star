@@ -25,6 +25,13 @@ export const Route = createFileRoute("/transfersimulator")({
 });
 
 function TransferPage() {
+  const [amount, setAmount] = useState("");
+
+  const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const digits = e.target.value.replace(/[^\d]/g, "").replace(/^0+(?=\d)/, "");
+    setAmount(digits ? Number(digits).toLocaleString("en-US") : "");
+  };
+
   return (
     <div className="ts" dir="rtl" lang="ar">
       <header className="ts-hero" />
