@@ -34,6 +34,7 @@ import iconCard from "../assets/card.png";
 import iconWallet from "../assets/wallet.png";
 import iconPerson from "../assets/person.png";
 import iconClipboard from "../assets/clipboard.png";
+import bankLogo from "../assets/nbe-logo.png.asset.json";
 
 const pageImages = [
   homeHeader,
@@ -58,6 +59,7 @@ const pageImages = [
   iconWallet,
   iconPerson,
   iconClipboard,
+  bankLogo.url,
 ];
 
 function NotFoundComponent() {
