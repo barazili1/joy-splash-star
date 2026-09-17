@@ -1515,8 +1515,8 @@
   color: oklch(0.2 0 0);
   cursor: pointer;
 }
-.ts-contact svg { width: 26px; height: 26px; }
-.ts-contact img { width: 26px; height: 26px; object-fit: contain; }
+.ts-contact svg { width: 30px; height: 30px; }
+.ts-contact img { width: 30px; height: 30px; object-fit: contain; }
 
 .ts-amount {
   margin-top: 10px;
