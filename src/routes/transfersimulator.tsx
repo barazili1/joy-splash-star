@@ -100,7 +100,14 @@ function TransferPage() {
         </div>
 
         <div className="ts-amount">
-          <input type="text" placeholder="المبلغ" dir="rtl" />
+          <input
+            type="text"
+            inputMode="numeric"
+            placeholder="المبلغ"
+            dir="rtl"
+            value={amount}
+            onChange={handleAmountChange}
+          />
           <span className="ts-amount-sep" aria-hidden="true" />
           <span className="ts-currency">EGP</span>
         </div>
