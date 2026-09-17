@@ -674,14 +674,18 @@
   -webkit-mask-position: center;
 }
 
-@utility bottom-nav {
+.bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-around;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0.8rem 0.6rem max(0.9rem, env(safe-area-inset-bottom));
   border-radius: 1.4rem 1.4rem 0 0;
   background: oklch(1 0 0);
@@ -698,6 +702,7 @@
 
 .nav-item {
   flex: 1 1 0;
+  width: 20%;
   min-width: 0;
   display: grid;
   justify-items: center;
@@ -1511,6 +1516,7 @@
   cursor: pointer;
 }
 .ts-contact svg { width: 14px; height: 14px; }
+.ts-contact img { width: 12px; height: 12px; object-fit: contain; }
 
 .ts-amount {
   margin-top: 10px;
@@ -1527,8 +1533,9 @@
   color: oklch(0.55 0 0);
   font-size: 13px;
   font-weight: 600;
-  text-align: left;
+  text-align: right;
   direction: ltr;
+  transform: translateX(4px);
 }
 .ts-amount-sep {
   width: 1px;
@@ -1583,7 +1590,7 @@
 
 .ts-next {
   position: fixed;
-  bottom: 80px;
+  bottom: 72px;
   left: 16px;
   right: 16px;
   height: 52px;
