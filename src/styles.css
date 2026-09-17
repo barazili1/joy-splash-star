@@ -1515,8 +1515,8 @@
   color: oklch(0.2 0 0);
   cursor: pointer;
 }
-.ts-contact svg { width: 14px; height: 14px; }
-.ts-contact img { width: 12px; height: 12px; object-fit: contain; }
+.ts-contact svg { width: 20px; height: 20px; }
+.ts-contact img { width: 20px; height: 20px; object-fit: contain; }
 
 .ts-amount {
   margin-top: 10px;
@@ -1533,9 +1533,8 @@
   color: oklch(0.55 0 0);
   font-size: 13px;
   font-weight: 600;
-  text-align: right;
+  text-align: center;
   direction: ltr;
-  transform: translateX(4px);
 }
 .ts-amount-sep {
   width: 1px;
